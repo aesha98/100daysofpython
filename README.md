@@ -5,7 +5,7 @@ This is where i keep all the neccesarry documentation, records, notes, summary a
 
 Program : Band Name Generator 
 
-filename : [main.py](day_1/main.py)
+filename : [main.py](Day_1/main.py)
 
 ### Summary/notes
 
