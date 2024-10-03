@@ -11,5 +11,7 @@ filename : [main.py](Day_1/main.py)
 
 working with variables and inputs to manage data, just simple stuff to warm up
 
+### Output/Outcome
 
+## Day 2
 
