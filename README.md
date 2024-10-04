@@ -31,7 +31,7 @@ relax, it's only day 2.
 
 ## Day 3
 
-Program : Tresure Island (Or should I say..an awesome choose your art adventure day!)
+Program : Tresure Island (Or should I say..an awesome choose your own adventure game!)
 
 filename : [main.py](Day_3/main.py)
 
