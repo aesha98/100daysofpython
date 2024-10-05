@@ -39,5 +39,11 @@ filename : [main.py](Day_3/main.py)
 
 Alright! let's kick it up a notch by adding conditional statement, control flow, logical operator and some combination of things to build a simple choose your own adventure game. 
 
+### Program Planning/Flowchart
+
+Okay, so my idea for this adventure game is basically dragon adventure story. I'm kinda obsessed with Fourth Wing (fantasy book im reading now) and i just want to play around with that idea for a bit. simple stuff since i only have a day. 
+
+
+
 ### Output/Outcome
 ![Screenshot program output](Day_2/outputday_3.png)
