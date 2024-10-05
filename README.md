@@ -31,7 +31,7 @@ relax, it's only day 2.
 
 ## Day 3
 
-Program : Tresure Island (Or should I say..an awesome choose your own adventure game!)
+Program : The Threshing (Or should I say..an awesome choose your own adventure game!)
 
 filename : [main.py](Day_3/main.py)
 
@@ -46,4 +46,4 @@ Okay, so my idea for this adventure game is basically dragon adventure story. I'
 
 
 ### Output/Outcome
-![Screenshot program output](Day_2/outputday_3.png)
+![Screenshot program output](Day_3/outputday_3.png)
