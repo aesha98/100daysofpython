@@ -57,4 +57,24 @@ game_info = 'A dragon without their rider is a tragedy, and a rider without thei
 print(welcome + game_info) 
 
 #display first choice
-first_choice = input("")
+first_choice = input('You are at a crossroads. Where do you want to go?\n Type "left" or "right"\n')
+
+if (first_choice == "left"):
+	  
+    second_choice = input("You keep running and find yourself ashore, no boats available. The next boat is in 10 minutes. Do you swim or wait?\n")
+	  
+    if(second_choice == "wait"):
+        
+        final_choice = input("You decided to wait, and take the next boat.\n You finally reached an island. There, you saw three door. Red, Blue and Yellow. Which one do you open?\n")
+
+        if (final_choice == "red"):
+                print("You got yourself a mighty, fierce and brave dragon! Congrats, but you can do better")
+        elif(final_choice == "yellow"):
+                print("You are the chosen one! you got yourself a legend dragon, who is impressed by your courage throughout the trial.\nCongrats! it can get any better than that")
+        else:
+                print("You got suck by a Venin, and now you are one of them, and now you are stuck in this dark path. Game Over.")
+    else:
+            print("You got eaten by the Loch Ness Monster. Game Over")
+
+else:
+		print("You fall into a hole. You died.\nGame Over")
