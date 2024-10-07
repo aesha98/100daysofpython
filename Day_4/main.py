@@ -10,6 +10,18 @@
 import random
 
 #display program
-user_input = input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n")
+first_input = input("What do you choose?:\n - 0 for Rock\n - 1 for Paper\n - 2 for Scissors.\n")
 
+# ascii representation
+rocks = '''
+rock
+'''
+
+scissors = '''
+scissors
+'''
+
+paper = '''
+paper
+'''
 
