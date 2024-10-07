@@ -3,4 +3,4 @@ import random
 
 friends = ["Alice", "Bob", "Mckenzie", "David", "Samuel"]
 
-print(random.choice(friends))
+print(random.choice(friends)) 
