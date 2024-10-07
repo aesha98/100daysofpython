@@ -47,3 +47,31 @@ Okay, so my idea for this adventure game is basically dragon adventure story. I'
 
 ### Output/Outcome
 ![Screenshot program output](Day_3/outputday_3.png)
+
+## Day 4
+
+Program : Rock, Paper Scissors Game
+
+filename : [main.py](Day_4/main.py)
+
+### Summary/notes
+
+Okay, so let's be random and play with randomisation and list!
+
+
+### Output/Outcome
+![Screenshot program output](Day_4/outputday_4.png)
+
+## Day 5
+
+Program : Rock, Paper Scissors Game
+
+filename : [main.py](Day_5/main.py)
+
+### Summary/notes
+
+Okay, so let's be random and play with randomisation and list!
+
+
+### Output/Outcome
+![Screenshot program output](Day_5/outputday_5.png)
