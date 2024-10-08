@@ -64,14 +64,13 @@ Okay, so let's be random and play with randomisation and list!
 
 ## Day 5
 
-Program : Rock, Paper Scissors Game
+Program : PyPassword Generator
 
 filename : [main.py](Day_5/main.py)
 
 ### Summary/notes
 
-Okay, so let's be random and play with randomisation and list!
-
+Okay, so let's be random and play with randomisation, list...and loops!
 
 ### Output/Outcome
 ![Screenshot program output](Day_5/outputday_5.png)
