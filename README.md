@@ -88,5 +88,6 @@ This project will span around two days.
 
 ### Flowchart Program
 ! [flowchart planing](Day_6_7/flowchart.png)
+
 ### Output/Outcome
 ![Screenshot program output](Day_6_7/outputday_6_7.png)
