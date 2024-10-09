@@ -74,3 +74,19 @@ Okay, so let's be random and play with randomisation, list...and loops!
 
 ### Output/Outcome
 ![Screenshot program output](Day_5/outputday_5.png)
+
+## Day 6 - 7
+
+Program : The Hangman Game
+
+filename : [main.py](Day_6_7/main.py)
+
+### Summary/notes
+
+Okay, so let's kick it up a notch and get a bit dirty! 
+This project will span around two days. 
+
+### Flowchart Program
+! [flowchart planing](Day_6_7/flowchart.png)
+### Output/Outcome
+![Screenshot program output](Day_6_7/outputday_6_7.png)
