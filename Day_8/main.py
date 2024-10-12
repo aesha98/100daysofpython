@@ -2,22 +2,28 @@
 # caesar cipher program
 import logo
 
-def encode(message, shift_num):
-	print("encode")
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
-def decode(message, shift_num):
-	print("decode")
+def caeser(message, shift, type):
+	print("")
 
 print(logo.logo)
 
-typeInput = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
+should_end = False
 
-# check type of input encryption
-if (typeInput == 'encode'):
+while not should_end:
+
+	typeInput = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
 	message = input("Type your message:\n")
-	shift_number = input("Type the shift number:\n")
-	encode(message, shift_number)
-elif (typeInput == 'decode'):
-	message = input("Type your message:\n")
-	shift_number = input("Type the shift number:\n")
-	decode(message, shift_number)
+	shift_number = int(input("Type the shift number:\n"))
+
+	caeser(message=message,shift=shift_number, type=typeInput)
+
+	restart = input("Type 'yes' if you want to go again. Otherwise type 'no'.\n" )
+	if (restart == 'no'):
+		should_end = True
+		print("Goodbye!")
+
+
+
+
