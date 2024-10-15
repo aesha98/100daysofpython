@@ -36,8 +36,19 @@ while not calculator_end:
 	second_num = input("what's the second number?: ")
 	other = input(f"Type 'y' to continue with calculating with {second_num}, or type 'n' to start a new calculation: ").lower()
 
+	# calculate input numbers
+	if opr == '+':
+		add()
+	elif opr == '-':
+		subtract()
+	elif opr == '*':
+		multiply()
+	elif opr == '/':
+		divide()
+
+	# check condition
 	if other == 'y':
 		clear()
 	elif other == 'n':
 		clear()
-		
+
