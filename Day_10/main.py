@@ -27,5 +27,9 @@ while not calculator_end:
 
 	# print logo
 	print(logo)
-	first_num = input("what's the first number?")
+	first_num = input("what's the first number?: ")
 	opr = input_operation()
+	second_num = input("what's the second number?: ")
+	other = input(f"Type 'y' to continue with calculating with {second_num}, or type 'n' to start a new calculation: ") 
+
+
