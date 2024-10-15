@@ -2,6 +2,10 @@
 # Day 10: Calculator Program
 
 from art import logo
+import os
+
+def clear():
+	os.system('clear')
 
 def subtract():
 	print("-")
@@ -30,6 +34,10 @@ while not calculator_end:
 	first_num = input("what's the first number?: ")
 	opr = input_operation()
 	second_num = input("what's the second number?: ")
-	other = input(f"Type 'y' to continue with calculating with {second_num}, or type 'n' to start a new calculation: ") 
+	other = input(f"Type 'y' to continue with calculating with {second_num}, or type 'n' to start a new calculation: ").lower()
 
-
+	if other == 'y':
+		clear()
+	elif other == 'n':
+		clear()
+		
