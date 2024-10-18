@@ -7,23 +7,37 @@ import os
 def clear():
 	os.system('clear')
 
-def subtract():
-	print("-")
+def subtract(first_num, second_num):
+	total = first_num - second_num
+	print(f"{first_num} - {second_num} : {total}")
 
-def multiply():
-	print("*")
+def multiply(first_num, second_num):
+	total = first_num * second_num
+	print(f"{first_num} * {second_num} : {total}")
 
-def add():
-	print("+")
+def add(first_num, second_num):
+	total = first_num + second_num
+	print(f"{first_num} + {second_num} : {total}")
 
-def divide():
-	print("/")
+def divide(first_num, second_num):
+	total = first_num / second_num
+	print(f"{first_num} / {second_num} : {total}")
 
 def input_operation():
 	operation = "+\n-\n*\n/\n"
 	print(operation)
-	opr = input("Pick an operation:")
+	opr = input("Pick an operation: ")
 	return opr
+
+def choose_operation(opr, first_num, second_num):
+	if opr == '+':
+		add(first_num, second_num)
+	elif opr == '-':
+		subtract(first_num, second_num)
+	elif opr == '*':
+		multiply(first_num, second_num)
+	elif opr == '/':
+		divide(first_num, second_num)
 
 calculator_end = False
 
@@ -34,21 +48,19 @@ while not calculator_end:
 	first_num = input("what's the first number?: ")
 	opr = input_operation()
 	second_num = input("what's the second number?: ")
-	other = input(f"Type 'y' to continue with calculating with {second_num}, or type 'n' to start a new calculation: ").lower()
+	
 
 	# calculate input numbers
-	if opr == '+':
-		add()
-	elif opr == '-':
-		subtract()
-	elif opr == '*':
-		multiply()
-	elif opr == '/':
-		divide()
+	choose_operation(opr)
+
+	other = input(f"Type 'y' to continue with calculating with {second_num}, or type 'n' to start a new calculation: ").lower()
 
 	# check condition
 	if other == 'y':
-		clear()
+		opr = input_operation()
+		second_num = input("what's the second number?: ")
+		choose_operation(opr=opr)
+		other = input(f"Type 'y' to continue with calculating with {second_num}, or type 'n' to start a new calculation: ").lower()
 	elif other == 'n':
 		clear()
 
