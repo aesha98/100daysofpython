@@ -51,7 +51,7 @@ while not calculator_end:
 	
 
 	# calculate input numbers
-	choose_operation(opr)
+	choose_operation(opr, first_num=first_num, second_num=second_num)
 
 	other = input(f"Type 'y' to continue with calculating with {second_num}, or type 'n' to start a new calculation: ").lower()
 
