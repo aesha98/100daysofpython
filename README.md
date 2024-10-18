@@ -104,3 +104,42 @@ filename : [main.py](Day_8/main.py)
 
 ### Output/Outcome
 ![Screenshot program output](Day_8/outputday_8.png)
+
+## Day 9
+
+Program : Secret Auction Program
+
+filename : [main.py](Day_9/main.py)
+
+### Summary/notes
+
+Using dictionaries and nesting to build a secret auction program.
+
+### Output/Outcome
+![Screenshot program output](Day_9/outputday_9.png)
+
+## Day 10
+
+Program : Calculator Program
+
+filename : [main.py](Day_10/main.py)
+
+### Summary/notes
+
+- Build a simple calculator program with basic arimethic operation
+
+### Output/Outcome
+![Screenshot program output](Day_10/outputday_10.png)
+
+## Day 11
+
+Program : Blackjack Program
+
+filename : [main.py](Day_11/main.py)
+
+### Summary/notes
+
+The blackjack capstone project
+
+### Output/Outcome
+![Screenshot program output](Day_11/outputday_11.png)
