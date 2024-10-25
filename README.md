@@ -143,3 +143,16 @@ The blackjack capstone project
 
 ### Output/Outcome
 ![Screenshot program output](Day_11/outputday_11.png)
+
+## Day 12
+
+Program : Number Guessing project
+
+filename : [main.py](Day_12/main.py)
+
+### Summary/notes
+
+-
+
+### Output/Outcome
+![Screenshot program output](Day_12/outputday_12.png)

@@ -28,21 +28,25 @@ def calculate_score(users_card):
 		total_score = i
 	return total_score
 
-def first_draw():
+def draw_cards():
 	for i in range(2):
 		player.append(random.choices(cards))
 	dealer.append(random.choice(cards))
 
 def fetch_card():
-	first_draw()
+	draw_cards()
 	print(f"Your cards: {player} , current score: {calculate_score(player)}")
 	print(f"Computer's first card: {calculate_score(dealer)}")
 	get_card = input("Type 'y' to get another card, type 'n' to pass: ").lower()
 	if get_card == 'y':
 		fetch_card()
 	elif get_card == 'n':
-		print(f"Your final hands: {player} , current score: {calculate_score(player)}")
-		print(f"Computer's first card: {calculate_score(dealer)}")
+		final_score_player = calculate_score(player)
+		final_score_cpu = calculate_score(dealer)
+		print(f"Your final hands: {player} , final score: {final_score_player}")
+		print(f"Computer's final hand: {dealer}, final score: {final_score_cpu}")
+
+		# check winning condition
 
 while not game_end:
 	ask_user = input("Do you want to play a game of Blackjack? Type 'y' or 'n': ").lower()
