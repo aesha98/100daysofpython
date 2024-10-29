@@ -1,15 +1,50 @@
 from logo import logo
 import random
-
-def easy_attempt(anser):
-	print("you have 10 guesses to guess the correct number")
-	user_guess = input("make a guess: ")
-
-def hard_attempt(answer):
-	print("you have 5 guesses to guess the correct number")
-	user_guess = input("make a guess: ")
+import os
 
 game_end = False
+
+def easy_attempt(anser, attempt):
+	print(f"you have {attempt} guesses to guess the correct number")
+	user_guess = int(input("make a guess: "))
+	
+	while attempt != 0:
+		if user_guess > anser:
+			print("Too High\nGuess Again")
+			attempt -= 1
+			easy_attempt(anser=anser,attempt=attempt)
+		elif user_guess < anser:
+			print("Too Low\nGuess Again")
+			attempt -= 1
+			easy_attempt(anser=anser,attempt=attempt)
+		elif user_guess == anser:
+			print("You win!")
+			os._exit(0)
+	print('You are out of guesses. You Lose! :(')
+	game_end = True
+	os._exit(0)
+
+
+def hard_attempt(answer, attempt):
+	print(f"you have {attempt} guesses to guess the correct number")
+	user_guess = int(input("make a guess: "))
+
+	while attempt != 1:
+		if user_guess > answer:
+			print("Too High\nGuess Again")
+			attempt -= 1
+			easy_attempt(anser=answer,attempt=attempt)
+		elif user_guess < anser:
+			print("Too Low\nGuess Again")
+			attempt -= 1
+			easy_attempt(anser=answer,attempt=attempt)
+		elif user_guess == answer:
+			print("You win!")
+			os._exit(0)
+	print("You are out of gueeses. You Lose! :(")
+	game_end = True
+	os._exit(0)
+
 
 while not game_end:
 
@@ -23,6 +58,6 @@ while not game_end:
 
 	print(f"psst, the correct answer is {answer}")
 	if diffculty == 'easy':
-		easy_attempt(anser=answer)
+		easy_attempt(anser=answer, attempt=10)
 	elif diffculty == 'hard':
-		hard_attempt(answer=answer)
+		hard_attempt(answer=answer, attempt=5)
